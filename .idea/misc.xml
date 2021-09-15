@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/font/aclonica.xml" value="0.28958333333333336" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/activity_danhsachbaihat.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/activity_home.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/activity_play_nhac.xml" value="0.264" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/activity_start.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/customdialog.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_bangxephang.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_chude.xml" value="0.1" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_danh_sach_bai_hat.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_nghesi.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_phobien.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_playlist.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_thinhhanh.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_thuvien_nghesi.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/dong_tim_kiem.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_bangxephang.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_chude.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.13958333333333334" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_dianhac.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_notifications.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_phobien.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_playlist.xml" value="0.13385416666666666" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_premium.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_thinhhanh.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_thu_vien.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/layout/fragment_trang_chu.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/trung/AndroidStudioProjects/ProjectMusicApp/app/src/main/res/menu/menu_timkiem.xml" value="0.12760416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
