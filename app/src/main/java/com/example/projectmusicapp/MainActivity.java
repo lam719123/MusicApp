@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.app.Activity;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Base64;
@@ -16,6 +17,9 @@ import com.example.projectmusicapp.Fragment.DashboardFragment;
 import com.example.projectmusicapp.Fragment.HomeFragment;
 import com.example.projectmusicapp.Fragment.LoadingDialog;
 import com.example.projectmusicapp.Fragment.PremiumFragment;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
+import com.facebook.share.widget.ShareDialog;
 import com.google.android.material.tabs.TabLayout;
 
 import java.security.MessageDigest;
@@ -25,6 +29,7 @@ import java.security.Signature;
 public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
+    private static MainActivity mainActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
