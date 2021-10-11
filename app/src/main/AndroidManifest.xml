@@ -18,13 +18,9 @@
         <activity
             android:name=".ShareNhacActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -32,7 +28,11 @@
         <activity
             android:name=".ShareFbLayoutActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".PlayNhacActivity"
@@ -40,10 +40,12 @@
         <activity android:name=".DanhsachbaihatActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <provider
             android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider3027863894154740"
+            android:authorities="com.facebook.app.FacebookContentProviderfb310443407559130"
             android:exported="true" />
     </application>
 

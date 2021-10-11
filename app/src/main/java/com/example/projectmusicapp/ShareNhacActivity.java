@@ -25,12 +25,14 @@ import com.facebook.share.widget.ShareDialog;
 import java.io.IOException;
 
 public class ShareNhacActivity extends AppCompatActivity {
+
     private TextView tvLinkShare;
     private Button btnShareImage;
     private Button btnShareLink;
     private ImageView imgShare;
     private Uri selectedImageUri;
     Bitmap bitmap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +71,7 @@ public class ShareNhacActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String capTion = "Học Lập Trình Android";
-               ShareFbLayoutActivity.sharePhoto(bitmap,capTion);
+                ShareFbLayoutActivity.sharePhoto(bitmap,capTion);
             }
         });
         btnShareLink.setOnClickListener(new View.OnClickListener() {
@@ -91,6 +93,7 @@ public class ShareNhacActivity extends AppCompatActivity {
     }
 
     // Check permistion cho android 6.0
+
     public void runTimePermission() {
 
         if (ContextCompat.checkSelfPermission(this,

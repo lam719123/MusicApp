@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(() -> loadingdialog.dismissDialog(), 3000);
         printKeyHash(MainActivity.this);
-
     }
 
     private void init(){

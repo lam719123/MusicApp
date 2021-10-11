@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_danhsachbaihat.xml" value="0.1328125" />
+        <entry key="..\:/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_home.xml" value="0.15208333333333332" />
+        <entry key="..\:/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_share_fb_layout.xml" value="0.1793478260869565" />
+        <entry key="..\:/AndroidStudioProjects/MusicApp/app/src/main/res/layout/activity_share_nhac.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/admin/Desktop/MusicApp/app/src/main/res/layout/activity_danhsachbaihat.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/admin/Desktop/MusicApp/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/Desktop/MusicApp/app/src/main/res/layout/activity_login_facebook.xml" value="0.264" />

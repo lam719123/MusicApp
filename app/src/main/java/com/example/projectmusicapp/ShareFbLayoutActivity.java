@@ -32,7 +32,6 @@ import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.AppInviteDialog;
 import com.facebook.share.widget.ShareDialog;
-
 import org.json.JSONObject;
 
 import java.net.URL;
@@ -43,6 +42,7 @@ import java.util.Arrays;
 import bolts.AppLinks;
 
 public class ShareFbLayoutActivity extends AppCompatActivity {
+
     private static ShareFbLayoutActivity shareFbLayoutActivity;
     private CallbackManager callbackManager;
     private FacebookCallback<LoginResult> loginResult;
@@ -173,7 +173,11 @@ public class ShareFbLayoutActivity extends AppCompatActivity {
     }
     //Login facebook with permisstion
     public void loginFaceBook() {
-        LoginManager.getInstance().logInWithReadPermissions(shareFbLayoutActivity, Arrays.asList("public_profile", "user_friends","email"));
+
+        LoginManager.getInstance().logInWithReadPermissions(shareFbLayoutActivity,
+                Arrays.asList("pages_manage_posts","public_profile","email"));
+        Intent intent = new Intent(ShareFbLayoutActivity.this, ShareNhacActivity.class);
+        startActivity(intent);
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
