@@ -40,7 +40,7 @@ public class PlayNhacActivity extends AppCompatActivity {
     TextView textViewtennhac , textViewcasi , textViewrunrime, textViewtatoltime;
     ImageButton imageButtonpreviewnhac,imageButtonplaypausenhac,imageButtonnexnhac;
     ViewPager viewPagerplaynhac;
-    Button btnShareFB;
+    ImageButton btnShareFB;
     boolean dem = false;
     int position = 0;
 
