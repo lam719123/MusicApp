@@ -20,7 +20,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class Fragment_dia_nhac extends Fragment {
     View view;
     CircleImageView circleImageView;
-    ObjectAnimator objectAnimator;
+    public ObjectAnimator objectAnimator;
 
     @Nullable
     @Override

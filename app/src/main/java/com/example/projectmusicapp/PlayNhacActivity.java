@@ -32,6 +32,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Random;
 
+import android.animation.ObjectAnimator;
+
 public class PlayNhacActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     androidx.appcompat.widget.Toolbar toolbarplaynhac;
@@ -95,9 +97,15 @@ public class PlayNhacActivity extends AppCompatActivity {
             if (mediaPlayer.isPlaying()){
                 mediaPlayer.pause();
                 imageButtonplaypausenhac.setImageResource(R.drawable.nutpause);
+                if(fragment_dia_nhac.objectAnimator != null){
+                    fragment_dia_nhac.objectAnimator.pause();
+                }
             }else {
                 mediaPlayer.start();
                 imageButtonplaypausenhac.setImageResource(R.drawable.nutplay);
+                if(fragment_dia_nhac.objectAnimator != null){
+                    fragment_dia_nhac.objectAnimator.resume();
+                }
             }
         });
 
