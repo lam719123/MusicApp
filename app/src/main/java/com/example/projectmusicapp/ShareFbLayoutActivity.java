@@ -47,11 +47,16 @@ public class ShareFbLayoutActivity extends AppCompatActivity {
     private CallbackManager callbackManager;
     private FacebookCallback<LoginResult> loginResult;
     private FacebookCallback<AppInviteDialog.Result> appInviteDialogResult;
+    private String linkShare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share_fb_layout);
+
+        Intent intent = getIntent();
+        linkShare = (String) intent.getStringExtra("linkShare");
+
         printKeyHash(ShareFbLayoutActivity.this);
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
@@ -177,6 +182,7 @@ public class ShareFbLayoutActivity extends AppCompatActivity {
         LoginManager.getInstance().logInWithReadPermissions(shareFbLayoutActivity,
                 Arrays.asList("pages_manage_posts","public_profile","email"));
         Intent intent = new Intent(ShareFbLayoutActivity.this, ShareNhacActivity.class);
+        intent.putExtra("linkShare", linkShare);
         startActivity(intent);
     }
     @Override

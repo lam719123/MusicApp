@@ -158,4 +158,12 @@
         app:subtitleTextColor="#000000"
         app:titleTextColor="#000000" />
 
+    <Button
+        android:id="@+id/btnShareFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="467dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.provider.MediaStore;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -38,6 +40,7 @@ public class PlayNhacActivity extends AppCompatActivity {
     TextView textViewtennhac , textViewcasi , textViewrunrime, textViewtatoltime;
     ImageButton imageButtonpreviewnhac,imageButtonplaypausenhac,imageButtonnexnhac;
     ViewPager viewPagerplaynhac;
+    Button btnShareFB;
     boolean dem = false;
     int position = 0;
 
@@ -169,9 +172,18 @@ public class PlayNhacActivity extends AppCompatActivity {
                 imageButtonnexnhac.setClickable(true);
             }, 3000);
         });
+
+        //btnShareFB
+        btnShareFB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String linkShare = mangbaihat.get(position).getLinkBaiHat();
+                Intent intent = new Intent(PlayNhacActivity.this, ShareFbLayoutActivity.class);
+                intent.putExtra("linkShare", linkShare);
+                startActivity(intent);
+            }
+        });
     }
-
-
 
     private void GetDataFromIntent() {
         Intent intent = getIntent();
@@ -200,6 +212,9 @@ public class PlayNhacActivity extends AppCompatActivity {
         textViewcasi = findViewById(R.id.textViewtencasiplaynhac);
         textViewtennhac = findViewById(R.id.textViewtenbaihatplaynhac);
         textViewrunrime = findViewById(R.id.textViewruntime);
+
+        btnShareFB = findViewById(R.id.btnShareFB);
+
         fragment_dia_nhac = new Fragment_dia_nhac();
 
         adapternhac = new ViewPagerDiaNhac(getSupportFragmentManager());

@@ -31,19 +31,23 @@ public class ShareNhacActivity extends AppCompatActivity {
     private Button btnShareLink;
     private ImageView imgShare;
     private Uri selectedImageUri;
+    private String linkShareFB;
     Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share_nhac);
+
+        Intent intent = getIntent();
+        linkShareFB = (String) intent.getStringExtra("linkShare");
+
         addControl();
         addEvent();
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == 0 && resultCode == this.RESULT_OK) {
             if(data != null)
             {
@@ -79,7 +83,8 @@ public class ShareNhacActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String title = "Lập Trinh Android";
                 String imageThumnal = "http://androidcoban.com/wp-content/uploads/2016/07/hoc_lap_trinh_android.png";
-                String linkShare = tvLinkShare.getText().toString();
+                //String linkShare = tvLinkShare.getText().toString();
+                String linkShare = linkShareFB;
                 ShareFbLayoutActivity.shareLinkFB(title,linkShare,imageThumnal);
             }
         });
