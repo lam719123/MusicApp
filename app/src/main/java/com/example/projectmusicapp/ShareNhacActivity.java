@@ -44,9 +44,9 @@ public class ShareNhacActivity extends AppCompatActivity {
         Intent intent = getIntent();
         linkShareFB = (String) intent.getStringExtra("linkShare");
         imgShareFB = (String) intent.getStringExtra("imgShare");
-        Picasso.with(ShareNhacActivity.this).load(imgShareFB).into(imgShare);
 
         addControl();
+        Picasso.with(ShareNhacActivity.this).load(imgShareFB).into(imgShare);
         addEvent();
     }
     @Override
