@@ -48,6 +48,7 @@ public class ShareFbLayoutActivity extends AppCompatActivity {
     private FacebookCallback<LoginResult> loginResult;
     private FacebookCallback<AppInviteDialog.Result> appInviteDialogResult;
     private String linkShare;
+    private String imgShare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +57,7 @@ public class ShareFbLayoutActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         linkShare = (String) intent.getStringExtra("linkShare");
+        imgShare = (String) intent.getStringExtra("imgShare");
 
         printKeyHash(ShareFbLayoutActivity.this);
         FacebookSdk.sdkInitialize(getApplicationContext());
@@ -183,6 +185,7 @@ public class ShareFbLayoutActivity extends AppCompatActivity {
                 Arrays.asList("pages_manage_posts","public_profile","email"));
         Intent intent = new Intent(ShareFbLayoutActivity.this, ShareNhacActivity.class);
         intent.putExtra("linkShare", linkShare);
+        intent.putExtra("imgShare" , imgShare);
         startActivity(intent);
     }
     @Override

@@ -188,7 +188,9 @@ public class PlayNhacActivity extends AppCompatActivity {
                 String linkShare = mangbaihat.get(position).getLinkBaiHat();
                 Intent intent = new Intent(PlayNhacActivity.this, ShareFbLayoutActivity.class);
                 intent.putExtra("linkShare", linkShare);
+                intent.putExtra("imgShare" , mangbaihat.get(position).getHinhBaiHat());
                 startActivity(intent);
+
             }
         });
     }

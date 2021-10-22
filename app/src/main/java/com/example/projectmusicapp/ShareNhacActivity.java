@@ -21,15 +21,17 @@ import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
+import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 
 public class ShareNhacActivity extends AppCompatActivity {
 
-    private TextView tvLinkShare;
-    private Button btnShareImage;
+//    private TextView tvLinkShare;
+    //private Button btnShareImage;
     private Button btnShareLink;
     private ImageView imgShare;
+    private String imgShareFB;
     private Uri selectedImageUri;
     private String linkShareFB;
     Bitmap bitmap;
@@ -41,6 +43,8 @@ public class ShareNhacActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         linkShareFB = (String) intent.getStringExtra("linkShare");
+        imgShareFB = (String) intent.getStringExtra("imgShare");
+        Picasso.with(ShareNhacActivity.this).load(imgShareFB).into(imgShare);
 
         addControl();
         addEvent();
@@ -71,13 +75,13 @@ public class ShareNhacActivity extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
-        btnShareImage.setOnClickListener(new View.OnClickListener() {
+        /*btnShareImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String capTion = "Học Lập Trình Android";
                 ShareFbLayoutActivity.sharePhoto(bitmap,capTion);
             }
-        });
+        });*/
         btnShareLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,8 +95,8 @@ public class ShareNhacActivity extends AppCompatActivity {
     }
 
     private void addControl() {
-        tvLinkShare = (TextView) findViewById(R.id.tv_link);
-        btnShareImage = (Button) findViewById(R.id.btn_share_image);
+//        tvLinkShare = (TextView) findViewById(R.id.tv_link);
+        //btnShareImage = (Button) findViewById(R.id.btn_share_image);
         btnShareLink = (Button) findViewById(R.id.btn_share_link);
         imgShare = (ImageView) findViewById(R.id.img_share);
     }
