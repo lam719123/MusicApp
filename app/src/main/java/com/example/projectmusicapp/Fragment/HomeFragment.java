@@ -16,7 +16,8 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+        //onCrateView trong Fragment dùng để gắn View cho fragment này
+        // view dùng để gắn layout cho phần fragment và lát nữa có thể lấy cái view này mình có thể tương tác những cái view ở bên trong layout của fragment
         view = inflater.inflate(R.layout.fragment_trang_chu, container, false);
         return  view;
     }

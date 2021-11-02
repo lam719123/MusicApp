@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         printKeyHash(MainActivity.this);
     }
 
-    private void init(){
+    private void init(){ // dùng để khởi tạo, đưa các fragment vào viewpager và sẽ set lên cho phần tablayout
         MainViewPagerAdapter mainViewPagerAdapter = new MainViewPagerAdapter(getSupportFragmentManager());
         mainViewPagerAdapter.addFragment(new HomeFragment(),"");
         mainViewPagerAdapter.addFragment(new DashboardFragment(),"");
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(2).setIcon(R.drawable.iconlogo);
     }
 
-    private void Catch(){
+    private void Catch(){ // ánh xạ
         tabLayout = findViewById(R.id.myTabLayout);
         viewPager = findViewById(R.id.myViewPager);
     }
